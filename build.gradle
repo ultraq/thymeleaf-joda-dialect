@@ -24,6 +24,6 @@ dependencies {
 	compile(
 		'joda-time:joda-time:2.3',
 		'org.codehaus.groovy:groovy:2.3.7',
-		'org.thymeleaf:thymeleaf:2.1.3.RELEASE'
+		'org.thymeleaf:thymeleaf:2.1.4.RELEASE'
 	)
 }

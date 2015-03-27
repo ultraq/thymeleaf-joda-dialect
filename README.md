@@ -13,7 +13,7 @@ Requirements
 ------------
 
  - Java 7
- - Thymeleaf 2.1 (2.1.3 and its dependencies included)
+ - Thymeleaf 2.1 (2.1.4 and its dependencies included)
 
 
 Installation
