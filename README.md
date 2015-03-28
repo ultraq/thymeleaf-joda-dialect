@@ -5,19 +5,14 @@ Thymeleaf Joda Dialect
 A simple dialect for Thymeleaf that adds Joda utility methods to Thymeleaf
 templates.
 
- - Current version: 1.0.0-SNAPSHOT
- - Released: ?? ??? ????
-
-
-Requirements
-------------
-
- - Java 7
- - Thymeleaf 2.1 (2.1.4 and its dependencies included)
+ - Current version: 1.0.0
+ - Released: 28 March 2015
 
 
 Installation
 ------------
+
+Minimum of Java 7 required.
 
 ### Standalone distribution
 Copy the JAR from [the latest release bundle](https://github.com/ultraq/thymeleaf-joda-dialect/releases),
@@ -29,7 +24,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-joda-dialect`
- - Version: `1.0.0-SNAPSHOT`
+ - Version: `1.0.0`
 
 
 Usage
