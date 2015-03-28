@@ -31,7 +31,7 @@ Usage
 
 Add the Joda dialect to your existing Thymeleaf template engine, eg:
 
-Java/Groovy example:
+Java example:
 
 ```java
 templateEngine.addDialect(new JodaDialect());
