@@ -20,7 +20,7 @@ import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 
 /**
- * Class to use Joda functionality in a utility object for use with Thymeleaf.
+ * Class to provide Joda functionality in Thymeleaf templates.
  * 
  * @author Emanuel Rabina
  */
@@ -39,12 +39,12 @@ class JodaExpressionObject {
 	/**
 	 * Format any type of date object using Joda formatters.
 	 * 
-	 * @param datetime
+	 * @param dateTime
 	 * @param pattern
 	 * @return Formatted datetime string.
 	 */
-	String format(DateTime datetime, String pattern) {
+	String format(DateTime dateTime, String pattern) {
 
-		return DateTimeFormat.forPattern(pattern).print(datetime)
+		return dateTime != null ? DateTimeFormat.forPattern(pattern).print(dateTime) : null
 	}
 }

@@ -2,11 +2,10 @@
 Thymeleaf Joda Dialect
 ======================
 
-A simple dialect for Thymeleaf that adds Joda utility methods to Thymeleaf
-templates.
+A dialect for Thymeleaf that adds Joda utility methods to Thymeleaf templates.
 
- - Current version: 1.0.0
- - Released: 28 March 2015
+ - Current version: 1.0.1-SNAPSHOT
+ - Released: ?? ??? 2015
 
 
 Installation
@@ -24,7 +23,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-joda-dialect`
- - Version: `1.0.0`
+ - Version: `1.0.1`
 
 
 Usage
@@ -32,32 +31,22 @@ Usage
 
 Add the Joda dialect to your existing Thymeleaf template engine, eg:
 
-```java
-ServletContextTemplateResolver templateresolver = new ServletContextTemplateResolver();
-templateresolver.setTemplateMode("HTML5");
+Java/Groovy example:
 
-templateengine = new TemplateEngine();
-templateengine.setTemplateResolver(templateresolver);
-templateengine.addDialect(new JodaDialect());		// This line adds the dialect to Thymeleaf
+```java
+templateEngine.addDialect(new JodaDialect());
 ```
 
-Or, for those using Spring configuration files:
+Spring XML configuration example:
 
 ```xml
-<bean id="templateResolver" class="org.thymeleaf.templateresolver.ServletContextTemplateResolver">
-  <property name="templateMode" value="HTML5"/>
-</bean>
-
 <bean id="templateEngine" class="org.thymeleaf.spring3.SpringTemplateEngine">
-  <property name="templateResolver" ref="templateResolver"/>
-
-  <!-- These lines add the dialect to Thymeleaf -->
+  ...
   <property name="additionalDialects">
     <set>
       <bean class="nz.net.ultraq.thymeleaf.JodaDialect"/>
     </set>
   </property>
-
 </bean>
 ```
 
@@ -75,7 +64,7 @@ method was called.
 
 ### format
 
-Formates a Joda `DateTime` instance according to the given format string.
+Formats a Joda `DateTime` instance according to the given format string.
 Documentation on the format string can be found on Joda's API pages
 [here](http://www.joda.org/joda-time/apidocs/org/joda/time/format/DateTimeFormat.html),
 although it's mostly compatible with the JDK date patterns that all Java devs
@@ -88,6 +77,9 @@ know already.
 
 Changelog
 ---------
+
+### 1.0.1
+ - Return `null` from the `format` method when given a `null` date
 
 ### 1.0.0
  - Initial release
