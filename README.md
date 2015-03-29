@@ -4,8 +4,8 @@ Thymeleaf Joda Dialect
 
 A dialect for Thymeleaf that adds Joda utility methods to Thymeleaf templates.
 
- - Current version: 1.0.1-SNAPSHOT
- - Released: ?? ??? 2015
+ - Current version: 1.0.1
+ - Released: 29 March 2015
 
 
 Installation
