@@ -4,8 +4,8 @@ Thymeleaf Joda Dialect
 
 A dialect for Thymeleaf that adds Joda utility methods to Thymeleaf templates.
 
- - Current version: 1.0.1
- - Released: 29 March 2015
+ - Current version: 1.0.2
+ - Released: 20 April 2015
 
 
 Installation
@@ -23,7 +23,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-joda-dialect`
- - Version: `1.0.1`
+ - Version: `1.0.2`
 
 
 Usage
@@ -77,6 +77,9 @@ know already.
 
 Changelog
 ---------
+
+### 1.0.2
+ - Add dialect metadata file for Eclipse plugin
 
 ### 1.0.1
  - Return `null` from the `format` method when given a `null` date
