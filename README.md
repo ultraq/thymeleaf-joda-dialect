@@ -4,14 +4,15 @@ Thymeleaf Joda Dialect
 
 A dialect for Thymeleaf that adds Joda utility methods to Thymeleaf templates.
 
- - Current version: 1.0.2
+ - Current version: 2.0.0-SNAPSHOT
  - Released: 20 April 2015
 
 
 Installation
 ------------
 
-Minimum of Java 7 required.
+Minimum of Java 7 and Thymeleaf 3.0 required.  If you're looking for a version
+of this dialect for Thymeleaf 2.1, use the 1.0 releases instead.
 
 ### Standalone distribution
 Copy the JAR from [the latest release bundle](https://github.com/ultraq/thymeleaf-joda-dialect/releases),
@@ -23,7 +24,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-joda-dialect`
- - Version: `1.0.2`
+ - Version: `2.0.0-SNAPSHOT`
 
 
 Usage
@@ -73,17 +74,3 @@ know already.
 ```html
 <div th:text="${#joda.format(myDate, 'EEEE, d MMMM yyyy')}">...</div>
 ```
-
-
-Changelog
----------
-
-### 1.0.2
- - Add dialect metadata file for Eclipse plugin
-
-### 1.0.1
- - Return `null` from the `format` method when given a `null` date
-
-### 1.0.0
- - Initial release
-

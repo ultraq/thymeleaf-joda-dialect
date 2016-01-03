@@ -6,9 +6,9 @@
 
 apply plugin: 'groovy'
 apply plugin: 'maven'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.1.0/gradle-support.gradle'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.1.0/maven-support.gradle'
-apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.1.0/bundle.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.2.1/gradle-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.2.1/maven-support.gradle'
+apply from: 'https://raw.githubusercontent.com/ultraq/gradle-support/1.2.1/bundle.gradle'
 
 //project.name = 'Thymeleaf Joda Dialect'
 project.description = 'Adds Joda utility methods to Thymeleaf templates'
@@ -17,13 +17,13 @@ project.sourceCompatibility = '1.7'
 
 project.group    = 'nz.net.ultraq.thymeleaf'
 project.artifact = 'thymeleaf-joda-dialect'
-project.version  = '1.0.2'
+project.version  = '2.0.0-SNAPSHOT'
 project.year     = '2015'
 
 dependencies {
 	compile(
-		'joda-time:joda-time:2.3',
-		'org.codehaus.groovy:groovy:2.3.7',
-		'org.thymeleaf:thymeleaf:2.1.4.RELEASE'
+		'joda-time:joda-time:2.9.1',
+		'org.codehaus.groovy:groovy:2.4.5',
+		'org.thymeleaf:thymeleaf:3.0.0.BETA01'
 	)
 }

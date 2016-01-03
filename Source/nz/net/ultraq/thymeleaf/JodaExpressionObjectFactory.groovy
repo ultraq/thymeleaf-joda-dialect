@@ -1,5 +1,5 @@
 /* 
- * Copyright 2015, Emanuel Rabina (http://www.ultraq.net.nz/)
+ * Copyright 2016, Emanuel Rabina (http://www.ultraq.net.nz/)
  * 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,35 +16,35 @@
 
 package nz.net.ultraq.thymeleaf
 
-import org.thymeleaf.dialect.AbstractDialect
-import org.thymeleaf.dialect.IExpressionObjectDialect
+import org.thymeleaf.context.IExpressionContext
 import org.thymeleaf.expression.IExpressionObjectFactory
 
 /**
- * Dialect to add the Joda expression object for use in Thymeleaf templates.
+ * Creates the Joda expression object when needed.
  * 
  * @author Emanuel Rabina
  */
-class JodaDialect extends AbstractDialect implements IExpressionObjectDialect {
+class JodaExpressionObjectFactory implements IExpressionObjectFactory {
 
-	static final String DIALECT_NAME = 'joda'
+	final Set<String> allExpressionObjectNames = [
+	    'joda'
+	]
 
 	/**
-	 * Constructor, initializes this dialect.
+	 * {@inheritDoc}
 	 */
-	JodaDialect() {
+	@Override
+	Object buildObject(IExpressionContext context, String expressionObjectName) {
 
-		super(DIALECT_NAME)
+		return new JodaExpressionObject()
 	}
 
 	/**
 	 * {@inheritDoc}
 	 */
 	@Override
-	IExpressionObjectFactory getExpressionObjectFactory() {
+	boolean isCacheable(String expressionObjectName) {
 
-		return {
-			
-		} as IExpressionObjectFactory
+		return true
 	}
 }
