@@ -26,8 +26,10 @@ import org.thymeleaf.expression.IExpressionObjectFactory
  */
 class JodaExpressionObjectFactory implements IExpressionObjectFactory {
 
+	static final String JODA_EXPRESSION_OBJECT_NAME = 'joda'
+
 	final Set<String> allExpressionObjectNames = [
-	    'joda'
+		JODA_EXPRESSION_OBJECT_NAME
 	]
 
 	/**
@@ -36,7 +38,7 @@ class JodaExpressionObjectFactory implements IExpressionObjectFactory {
 	@Override
 	Object buildObject(IExpressionContext context, String expressionObjectName) {
 
-		return new JodaExpressionObject()
+		return expressionObjectName == JODA_EXPRESSION_OBJECT_NAME ? new JodaExpressionObject() : null
 	}
 
 	/**
@@ -45,6 +47,6 @@ class JodaExpressionObjectFactory implements IExpressionObjectFactory {
 	@Override
 	boolean isCacheable(String expressionObjectName) {
 
-		return true
+		return expressionObjectName == JODA_EXPRESSION_OBJECT_NAME
 	}
 }

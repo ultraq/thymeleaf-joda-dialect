@@ -43,8 +43,6 @@ class JodaDialect extends AbstractDialect implements IExpressionObjectDialect {
 	@Override
 	IExpressionObjectFactory getExpressionObjectFactory() {
 
-		return {
-			
-		} as IExpressionObjectFactory
+		return new JodaExpressionObjectFactory()
 	}
 }
