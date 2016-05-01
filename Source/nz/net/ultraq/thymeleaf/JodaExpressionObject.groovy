@@ -41,7 +41,8 @@ class JodaExpressionObject {
 	 * 
 	 * @param dateTime
 	 * @param pattern
-	 * @return Formatted datetime string.
+	 * @return Formatted date/time string, or <tt>null</tt> if <tt>dateTime</tt>
+	 *         is also null.
 	 */
 	String format(DateTime dateTime, String pattern) {
 
