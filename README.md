@@ -2,10 +2,12 @@
 Thymeleaf Joda Dialect
 ======================
 
-A dialect for Thymeleaf that adds Joda utility methods to Thymeleaf templates.
+[![Build Status](https://travis-ci.org/ultraq/thymeleaf-joda-dialect.svg?branch=master)](https://travis-ci.org/ultraq/thymeleaf-joda-dialect)
+[![GitHub Release](https://img.shields.io/github/release/ultraq/thymeleaf-joda-dialect.svg?maxAge=3600)](https://github.com/ultraq/thymeleaf-joda-dialect/releases/latest)
+[![Maven Central](https://img.shields.io/maven-central/v/nz.net.ultraq.thymeleaf/thymeleaf-joda-dialect.svg?maxAge=3600)](http://search.maven.org/#search|ga|1|g%3A%22nz.net.ultraq.thymeleaf%22%20AND%20a%3A%22thymeleaf-joda-dialect%22)
+[![License](https://img.shields.io/github/license/ultraq/thymeleaf-joda-dialect.svg?maxAge=2592000)](https://github.com/ultraq/thymeleaf-joda-dialect/blob/master/LICENSE.txt)
 
- - Current version: 2.0.0-SNAPSHOT
- - Released: ?? ??? ????
+A dialect for Thymeleaf that adds Joda utility methods to Thymeleaf templates.
 
 
 Installation
@@ -24,7 +26,7 @@ Add a dependency to your project with the following co-ordinates:
 
  - GroupId: `nz.net.ultraq.thymeleaf`
  - ArtifactId: `thymeleaf-joda-dialect`
- - Version: `2.0.0-SNAPSHOT`
+ - Version: (as per the badges above)
 
 
 Usage
