@@ -17,7 +17,7 @@ Minimum of Java 7 and Thymeleaf 3.0 required.  If you're looking for a version
 of this dialect for Thymeleaf 2.1, use the 1.0 releases instead.
 
 ### Standalone distribution
-Copy the JAR from [the latest release bundle](https://github.com/ultraq/thymeleaf-joda-dialect/releases),
+Copy the JAR from [one of the release bundles](https://github.com/ultraq/thymeleaf-joda-dialect/releases),
 placing it in the classpath of your program, or build the project from the
 source code here on GitHub.
 
