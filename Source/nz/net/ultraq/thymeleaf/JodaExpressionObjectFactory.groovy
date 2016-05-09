@@ -33,7 +33,12 @@ class JodaExpressionObjectFactory implements IExpressionObjectFactory {
 	]
 
 	/**
-	 * {@inheritDoc}
+	 * Returns a Joda expression object instance for the "joda" object name.
+	 * 
+	 * @param context
+	 * @param expressionObjectName
+	 * @return New Joda expression object for the "joda" name, or {@code null} for
+	 *         anything else.
 	 */
 	@Override
 	Object buildObject(IExpressionContext context, String expressionObjectName) {
@@ -42,7 +47,10 @@ class JodaExpressionObjectFactory implements IExpressionObjectFactory {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Returns that the instance is cacheable for the "joda" name.
+	 * 
+	 * @param expressionObjectName
+	 * @return {@code true} for the "joda" name.
 	 */
 	@Override
 	boolean isCacheable(String expressionObjectName) {

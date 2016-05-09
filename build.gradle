@@ -27,16 +27,21 @@ project.sourceCompatibility = '1.7'
 
 project.group    = 'nz.net.ultraq.thymeleaf'
 project.artifact = 'thymeleaf-joda-dialect'
-project.version  = '2.0.0-SNAPSHOT'
+project.version  = '2.0.0'
 project.year     = '2015'
 
 dependencies {
 	compile(
 		'joda-time:joda-time:2.9.2',
 		'org.codehaus.groovy:groovy:2.4.6',
-		'org.thymeleaf:thymeleaf:3.0.0.BETA03'
+		'org.thymeleaf:thymeleaf:3.0.0.RELEASE'
 	)
 	testCompile(
 		'junit:junit:4.12'
 	)
+}
+
+groovydoc {
+	link('http://www.thymeleaf.org/apidocs/thymeleaf/3.0.0.RELEASE/', 'org.thymeleaf.')
+	link('http://www.joda.org/joda-time/apidocs/', 'org.joda.')
 }

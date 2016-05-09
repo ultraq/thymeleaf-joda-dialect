@@ -38,7 +38,9 @@ class JodaDialect extends AbstractDialect implements IExpressionObjectDialect {
 	}
 
 	/**
-	 * {@inheritDoc}
+	 * Returns the factory for creating Joda expression object instances.
+	 * 
+	 * @return Joda expression object factory.
 	 */
 	@Override
 	IExpressionObjectFactory getExpressionObjectFactory() {
