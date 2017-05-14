@@ -3,6 +3,7 @@ Thymeleaf Joda Dialect
 ======================
 
 [![Build Status](https://travis-ci.org/ultraq/thymeleaf-joda-dialect.svg?branch=master)](https://travis-ci.org/ultraq/thymeleaf-joda-dialect)
+[![Coverage Status](https://coveralls.io/repos/github/ultraq/thymeleaf-joda-dialect/badge.svg?branch=master)](https://coveralls.io/github/ultraq/thymeleaf-joda-dialect?branch=master)
 [![GitHub Release](https://img.shields.io/github/release/ultraq/thymeleaf-joda-dialect.svg?maxAge=3600)](https://github.com/ultraq/thymeleaf-joda-dialect/releases/latest)
 [![Maven Central](https://img.shields.io/maven-central/v/nz.net.ultraq.thymeleaf/thymeleaf-joda-dialect.svg?maxAge=3600)](http://search.maven.org/#search|ga|1|g%3A%22nz.net.ultraq.thymeleaf%22%20AND%20a%3A%22thymeleaf-joda-dialect%22)
 [![License](https://img.shields.io/github/license/ultraq/thymeleaf-joda-dialect.svg?maxAge=2592000)](https://github.com/ultraq/thymeleaf-joda-dialect/blob/master/LICENSE.txt)
