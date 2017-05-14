@@ -27,7 +27,7 @@ import org.thymeleaf.expression.IExpressionObjectFactory
  */
 class JodaDialect extends AbstractDialect implements IExpressionObjectDialect {
 
-	static final String DIALECT_NAME = 'joda'
+	static final String DIALECT_NAME = 'Joda'
 
 	/**
 	 * Constructor, initializes this dialect.
